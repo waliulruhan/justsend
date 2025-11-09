@@ -1,0 +1,9 @@
+MONGO_URI = "your mongo uri"
+PORT = random port loke 5000
+JWT_SECRET = "your jwt secret"
+
+SECRET_KEY =secret key for admin
+
+CLOUDINARY_CLOUD_NAME = "Use yours"
+CLOUDINARY_API_KEY = "Use yours"
+CLOUDINARY_API_SECRET = "Use yours"

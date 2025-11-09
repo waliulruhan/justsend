@@ -1,0 +1,240 @@
+.userItem{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.userItem p{
+    flex-grow: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin: 0px 5px;
+    text-align: start;
+}
+
+/* message item  */
+.message-sender{
+    margin: 0;
+    font-size: .65rem;
+    font-weight: 600;
+}
+.message-avatar{
+    position: absolute;
+    left: -17px;
+    top: 0px;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.message-avatar img{
+    height: 15px;
+    width: 15px;
+}
+.message-content{
+    margin: 0;
+    white-space: pre-wrap;
+    font-size: .8rem;
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    word-break: break-word;
+}
+.message-content a.chat-link {
+    color: #5b9b20;
+    text-decoration: underline; 
+}
+.time-stamp{
+    text-align: end;
+    font-size: .55rem;
+    font-weight: 300;
+    color: #969696;
+    margin: 0;
+    height: fit-content;
+    display: flex;
+    gap: 3px;
+    justify-content: end;
+}
+
+/* .table */
+.table{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;  
+    height: 80%;
+    overflow-y: scroll;
+    padding: 15px;
+    flex-grow: 1;
+}
+
+
+.attachment-modal-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(217, 255, 213);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+.attachment-modal-header{
+    height: 40px;
+    background-color: #c5f8c0;
+}
+
+.tabs-container {
+    height: calc(100% - 40px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .tab-titles {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative;
+    height: 40px;
+    background-color: #c5f8c0;
+    border-bottom: 1px solid  rgb(0, 168, 0);
+  }
+  .tab-titles p{
+     margin: 0;
+  }
+  
+  .tab-button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    margin: 0 15px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .tab-button.active {
+    color: rgb(0, 168, 0);
+    font-weight: bold;
+  }
+  
+  .underline {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(0, 168, 0);
+  }
+  
+  .tab-content {
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .animated-content {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  
+  .no-content {
+    font-style: italic;
+    color: gray;
+    font-size: 18px;
+  }
+
+  /* Gallery Container */
+.gallery-container {    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+  }
+  
+  /* Image Grid */
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  /* Full-Screen Overlay */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .full-image {
+    max-width: 80%;
+    max-height: 80%;
+    
+  }
+  
+  /* Navigation Buttons */
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+  color: #22223b;
+  }
+  
+  .selected-image-header{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c3ffbd;
+    padding: 0 10px;
+  }
+  

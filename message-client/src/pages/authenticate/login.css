@@ -1,0 +1,122 @@
+.newUser{
+    width: 60px;
+    height: 60px;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 10% ;
+    user-select: none;
+    font-size: 13px;
+    font-weight: 800;
+    text-align: center;
+    transition: .5s all ease;
+    animation: shadows 1.5s infinite;
+}
+.newUser:hover{
+    border-radius: 40%;
+}
+
+#toggle-newUser{
+    color: #66a22e;
+    cursor: pointer;
+}
+#toggle-newUser:hover{
+    color: #447515;
+}
+.authenticate-con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    background: rgb(35,61,10);
+    background: linear-gradient(333deg, #729c4b 8%, #bbe691 54%, #a8dd77 100%); 
+  }
+
+
+.auth-logo{
+    padding: 5px;
+    height: 70px;
+    width: 70px;
+}
+.auth-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-con{
+    padding: 20px;
+    background-color: white;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transform:rotate( .5deg);
+    animation: shadows 1.5s infinite, slideIn 1s ease-in-out forwards;
+}
+@keyframes shadows {
+    0% {
+      box-shadow: 0px 0px 20px 10px #91f334;
+    }
+    50% {
+      box-shadow: 0px 0px 20px 10px #acff5f;
+    }
+    60% {
+        box-shadow: 0px 0px 20px 10px #a3fa52;
+      }
+    75% {
+      box-shadow: 0px 0px 20px 10px #8dfc1d;
+    }
+    100% {
+      box-shadow: 0px 0px 20px 10px #9af743;
+    }
+  }
+@keyframes slideIn {
+     to {
+        opacity: 1;
+        transform:rotate(0deg);
+    }
+}
+
+
+.input-field::placeholder{
+    color: #101f03;
+    font-weight: 500;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #66a22e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+.login-button:hover{
+    
+    background-color: #447515;
+
+}
+
+#sign-up-text{
+    color: #737373;
+    font-weight: 700;
+    padding: 3px;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    
+       }

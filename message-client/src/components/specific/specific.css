@@ -1,0 +1,82 @@
+.dialog-input{
+    gap: 5px;
+    border: 1px solid #1f1e1e;
+    padding: 5px;
+    width: 300px;
+}
+.dialog-input input{
+    border: none;
+    flex-grow: 1;
+    background-color:#eff9e8;
+}
+
+.dialog-user-list{
+    max-height: 50vh;
+    width: 100%;
+    overflow-y: scroll;
+    padding: 0 10px;
+    margin-top: 5px;
+}
+
+.chat-overview-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(195, 255, 189);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+.chat-overview-header{
+    height: 40px;
+}
+.chat-overview-main{
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+}
+.chat-overview-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.chat-overview-photo{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.chat-overview-photo img{
+    height: 100px;
+    width: 100px;
+}
+.chat-overview-name p{
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.chat-overview-footer{
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.chat-overview-footer p{
+    margin: 0;
+    font-size: .7rem;
+    text-align: center;
+    font-weight: 500;
+}
+.chat-overview-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.chat-overview-item{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}

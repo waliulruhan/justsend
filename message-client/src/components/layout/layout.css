@@ -1,0 +1,154 @@
+.layout{
+    display: flex;
+    height: calc( 100dvh - 48px);
+    width: 100vw;
+    max-height: calc( 100dvh - 48px);
+    max-width: 100vw;
+    overflow: hidden;
+}
+.layout-main{
+    flex: .6;
+    display: flex;
+    flex-direction: column;
+    height: calc( 100dvh - 48px);
+    max-height: calc( 100dvh - 48px);
+    background: linear-gradient( 333deg, #F4F4F4, #1D546C);
+    width: 100%; 
+    position: relative;
+}
+.layout-side{
+    flex: .4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    background: linear-gradient( -333deg, #F4F4F4, #1D546C); 
+}
+.layout-side-drawer{
+  background-color: #f7fdf0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 5px;
+  box-sizing: border-box;
+}
+
+/* header styles */
+.header{
+    display: flex;
+    height: 48px;
+    color: #F4F4F4;
+}
+.header-logo{
+ margin: 0 10px;
+}
+.header-logo p{
+  margin: 0px;
+
+}
+.header-image{
+  height: 28px;
+}
+.header-middle{
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ /* some for chatHeader */
+.chat-user-info-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+}
+.chat-user-info-image{
+  height: 35px;
+  width: 35px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.chat-user-info-image img{
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.chat-user-info-data{
+  /* border-left: 2px solid #22223b;
+  border-radius: 50%; */
+}
+.chat-user-name{
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.chat-user-last-active{
+  margin: 0;
+  padding: 0 0 0 5px;
+  font-size: 0.7rem;
+  border-left: 4px solid #22223b;
+  border-radius: 2px;
+}
+
+
+
+.header-menu{
+    display: none;
+}
+
+.chat-header-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px 0 0;
+}
+
+
+/* admin */
+.admin-layout{
+  display: flex;
+  height: 100dvh;
+  width: 100vw;
+  max-height: 100dvh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+.admin-layout-main{
+  flex: .7;
+  background-color: #fcfffa;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  max-width: 70%;
+}
+.admin-layout-side{
+  flex: .3;
+}
+
+@media only screen and (max-width: 600px) {
+  .layout-main{
+    flex: 1;
+  }
+  .layout-side{
+    display: none;
+  }
+  .admin-layout-main{
+    flex: 1;
+    max-width: 100%;
+  }
+  .admin-layout-side{
+    display: none;
+  }
+
+  
+  .header-logo{
+    display: none;
+  }
+  .header-menu{
+    display: block;
+  }
+  
+
+  }

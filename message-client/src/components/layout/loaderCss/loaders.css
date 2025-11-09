@@ -1,0 +1,36 @@
+.layout-loader{
+    position: relative;
+    height: 100dvh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.layout-loader-border{
+    background: linear-gradient(#36531d , #99d461 , #58af06 , #6b8b4f);
+    height: 500vh;
+    width: 500vw;
+    animation: rotate 5s linear infinite;
+    margin-left: -100px;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.layout-loader-main{
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafff5;
+    height: calc(100dvh - 8px);
+    width: calc(100vw - 8px);
+    flex-direction: column;
+    gap: 35px;
+}
